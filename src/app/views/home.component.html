@@ -1,33 +1,34 @@
 <div class="content-block">
-  <h2>{{titulo}}</h2>
+   <h4>{{titulo}}</h4>
 </div>
 
 <div class="content">
-	
-  <h2>Welcome to Tienda de Mascotas</h2>
-  <p>Here are some links to help you get started:</p>
-  <div class="clearfix"></div>
-  <br>
+	 <div class="content-box">
+      <h2>Welcome to Tienda de Mascotas</h2>
+      <p>Here are some links to help you get started:</p>
+      <div class="clearfix"></div>
+      <br><br><br> 
 
-  <div class="links-container">
-    
-      <a class="links" [routerLink]="['/hospedaje']">
-        <img width="90" heigth="90" src="/assets/images/viaje.png">
-        <span>Hospedaje</span>
-      </a>
+      <div class="links-container">
+        
+          <a class="links" [routerLink]="['/hospedaje']">
+            <img width="90" heigth="90" src="/assets/images/viaje.png">
+            <span>Hospedaje</span>
+          </a>
 
-      <a class="links" [routerLink]="['/cantina']">
-         <img width="130" heigth="130" src="/assets/images/comida.png">
-         <span>Cantina</span>
-      </a>
+          <a class="links" [routerLink]="['/cantina']">
+             <img width="130" heigth="130" src="/assets/images/comida.png">
+             <span>Cantina</span>
+          </a>
 
-      <a class="links" href="#">
-        <img width="90" heigth="90" src="/assets/images/vestido.png">
-        <span>Tienda</span>
-      </a>
+          <a class="links" [routerLink]="['/tienda']">
+            <img width="90" heigth="90" src="/assets/images/vestido.png">
+            <span>Tienda</span>
+          </a>
 
-  </div>
-<br><br><br>
+      </div>
+    <br><br><br>
+    </div>
 </div> 
  
   <!-- Links -->

@@ -1,7 +1,8 @@
 /*Es para el Home*/
 :host {
     /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    */font-family: Roboto,RobotoFallback,Helvetica,Arial,sans-serif;
+    */
+    font-family: Roboto,RobotoFallback,Helvetica,Arial,sans-serif;
     font-size: 14px;
     color: #333;
     box-sizing: border-box;
@@ -41,17 +42,45 @@
     margin: 0 16px;
   }
 
-.logo{
+ .logo{
     display: flex;
   }
  
-  .content {
+  .content{
     display: flex;
     margin: 10px auto;
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
     align-items: center;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  .content-box{
+    box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+    border-radius: 4px;
+    background-color: #fff;
+    margin: 2px 2px 3px;
+    padding: 20px 30px;
+    width:98%;
+  }
+  
+  #content-detail-cantina{
+    text-align: justify;
+  }
+
+  #content-detail-cantina p, li{
+    font-size: small;
+  }
+
+  .img-detail{
+    width: 96%;
+    margin-bottom:80px;
+    border-radius: 4%;
+    box-shadow: 0px 0px 21px 6px rgba(13, 29, 211, 0.22);
+    /*height: 200px;*/
+    float: right;
   }
 
   #side-menu{
@@ -224,7 +253,7 @@ body {
 
 #sidebar-wrapper {
   min-height: 100vh;
-  margin-left: -15rem;
+  margin-left: /*-15rem;*/-13rem;
   -webkit-transition: margin .25s ease-out;
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
@@ -266,23 +295,37 @@ body {
 
 
 /*Cantina Horizontal Cards*/
-
 .content .product {
-  width: 95%;
+  /*width: 95%;*/
   /*height: 200px;*/
   display: flex;
-  margin: 1em 0;
+  margin: 2em 0;
   border-radius: 5px;
   overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0px 0px 21px 3px rgba(0, 0, 0, 0.15);
+  /*cursor: pointer; */
+}
+.element-selected{
+ /*box-shadow: 0px 0px 11px 3px rgba(0, 0, 0, 0.15);*/
+  box-shadow: 0px 0px 11px 3px rgba(56, 82, 204, 0.13);
   transition: all .1s ease-in-out;
 }
-.content .product:hover {
-  box-shadow: 0px 0px 21px 3px rgba(0, 0, 0, 0.11);
+
+.element-selected:hover {
+ /* box-shadow: 0px 0px 21px 3px rgba(0, 0, 0, 0.11);*/
+ box-shadow: 0px 0px 11px 3px rgba(13, 29, 211, 0.22);
 }
+
+#card-altura{
+  height: 210px;
+  overflow: hidden;
+}
+
+.botonera{
+  margin: 0 12px 12px 12px;
+}
+
 .content .product .img-container {
-  flex: 2;
+  flex: 1;
 }
 .content .product .img-container img {
   object-fit: cover;
@@ -299,7 +342,9 @@ body {
   flex: 3;
 }
 .content .product .product-info .product-content {
-  padding: 1em;
+  padding: 1em 1em .5em 1em;
+  height: 145px;
+  overflow: hidden;
 }
 .content .product .product-info .product-content h1 {
   font-size: 1.2em;
@@ -309,6 +354,7 @@ body {
   font-size: small/*.9em*/;
   font-weight: bold;
   margin-right: 1px;
+  line-height: normal;
 }
 .content .product .product-info .product-content ul li {
   color: #636363;
@@ -316,12 +362,14 @@ body {
   margin-left: 0;
 }
 
-.content .product .product-info .product-content .buttons {
-  padding-top: .4em;
-  display: inline-block;
-  bottom: 5px;
+.content .product .product-info .buttons {
+ /* padding-top: .4em;*/
+  /*display: inline-block;*/
+  text-align: right;
+  bottom: 5px;  
+  margin: 0 15px 15px;
 }
-.content .product .product-info .product-content .buttons .button {
+.content .product .product-info .buttons .button {
   text-decoration: none;
   color: #5e5e5e;
   /*font-weight: bold;*/
@@ -329,26 +377,76 @@ body {
   padding: .3em .65em;
   border-radius: 2.3px;
   transition: all .1s ease-in-out;
+}
 
+.content .product .product-info .buttons .more {
+  border: 1px #5e5e5e solid; 
 }
-.content .product .product-info .product-content .buttons .add {
-  border: 1px #5e5e5e solid;
-}
-.content .product .product-info .product-content .buttons .add:hover {
+.content .product .product-info .buttons .more:hover {
   border-color: #6997b6;
   color: #6997b6;
 }
-.content .product .product-info .product-content .buttons .buy {
-  border: 1px #5e5e5e solid;
+
+.content .product .product-info .buttons .add {
+  border: 1px #5e5e5e solid;  
 }
-.content .product .product-info .product-content .buttons .buy:hover {
+.content .product .product-info .buttons .add:hover {
   border-color: #6997b6;
   color: #6997b6;
 }
-.content .product .product-info .product-content .buttons #price {
-  margin-left: 4em;
-  color: #5e5e5e;
+
+ #price {
+  margin-left: 2em;
+  color: #9d163a;
   font-weight: bold;
   border: 1px solid rgba(137, 137, 137, 0.2);
   background: rgba(137, 137, 137, 0.04);
 }
+
+
+
+/* Formulario reserva*/
+.form_main {
+    width: 100%;
+}
+.form_main h4 {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+.heading {
+    border-bottom: 1px solid #fcab0e;
+    padding-bottom: 9px;
+    position: relative;
+}
+.heading span {
+    background: #9e6600 none repeat scroll 0 0;
+    bottom: -2px;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 75px;
+}   
+.form {
+    border-radius: 7px;
+    padding: 6px;
+}
+.form input, textarea{
+    border-radius: 7px;    
+}
+
+.txt[type="text"] {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 5px 0 5px 5px;
+    width: 100%;
+}
+.txt_3[type="text"] {
+    margin: 10px 0 0;
+    padding: 5px 0 5px 5px;
+    width: 100%;
+}
+

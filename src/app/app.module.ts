@@ -8,6 +8,9 @@ import { routing, appRoutingProviders } from './app.routing';
 import { HomeComponent } from './components/home.component';
 import { HospedajeComponent } from './components/hospedaje.component';
 import { CantinaComponent } from './components/cantina.component';
+import { CantinaDetailComponent } from './components/cantina-detail.component';
+import { TiendaComponent } from './components/tienda.component';
+import { ProductoDetailComponent } from './components/producto-detail.component';
 
 import { AppComponent } from './app.component';
 
@@ -16,7 +19,10 @@ import { AppComponent } from './app.component';
     AppComponent,
     HomeComponent,
     HospedajeComponent,
-    CantinaComponent
+    CantinaComponent,
+    CantinaDetailComponent,
+    TiendaComponent,
+    ProductoDetailComponent
   ],
   imports: [
     BrowserModule,

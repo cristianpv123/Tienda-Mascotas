@@ -1,9 +1,55 @@
 <div class="content-block">
-  <h1>{{titulo}}</h1>
+   <h4>{{titulo}}</h4>
 </div>
 
 <div class="content">
+ 	<div class="content-box">
+		<img class="card-img-top" src="../assets/images/hotel2.jpg" alt="Habitación">
 
-	<h2>hospedaje</h2>
-	
+		<h2>Alojamiento para perros</h2>
+		<p> Lorem ipsum dolor sit amet consectetur adipisicing elit ariatur Lorem ipsum dolor sit amet consectetur adipisicing elit ariaturLorem ipsum dolor sit amet consectetur adipisicing elit ariatur Lorem ipsum dolor sit amet consectetur adipisicing elit ariatur</p>
+		<br>
+		<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		conseqiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<br>
+		<p> Lorem in culpa qui officia deserunt mollit anim id est laborum:</p>
+        <ul>
+          <li>Lorem ipsum dolor sit ametconsectetu.</li>
+          <li>ading elit dlanditiis quis ip.</li>
+          <li>adipisicing nditiis quis ip.</li>
+          <li>adipiicing elit dlanditiis quis ip.</li>
+          <li>lorem sde glanditiis dars fao.</li>
+        </ul>
+
+
+        <div class="form_main">
+            <h4 class="heading" style="text-align: right;"><strong>Contact </strong> Us <span></span></h4>
+            <div class="form">
+                <form action="" method="post" id="contactFrm" name="contactFrm">
+                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
+                    <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+                   <!--  <div class="input-append date form_datetime">
+    <input size="16" type="text" (click)="mostrarCalendario()">
+    <span class="add-on"><i class="icon-th"></i></span>
+</div> -->
+ <input type="text" id="fecha_init" name="fecha_init" class="txt" placeholder="Please input your Date init" (click)="mostrarCalendario('fecha_init')"/> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+ 
+<input type="text" id="fecha_end" name="fecha_end" class="txt" placeholder="Please input your Date end" (click)="mostrarCalendario('fecha_end')"/> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+
+<!--  <input type='text' id="txtFecha" class="form-control"  readonly/>
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span> -->
+                   
+
+                	 <textarea placeholder="Your Message" name="mess" type="text" rows="5" class="txt_3"></textarea>
+                     <input type="submit" value="Send your Info." name="submit" class="btn btn-primary btn-sm btn-block">
+                </form>
+            </div>
+        </div>
+	</div>
 </div>
+
