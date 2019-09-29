@@ -9984,7 +9984,6 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal;
   font-weight: normal;
   line-height: 1;
-  margin-right: 5px; 
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -10000,18 +9999,6 @@ a.text-dark:hover, a.text-dark:focus {
 
 .glyphicon-calendar:before {
   content: "\1f4c5";
-}
-
-.glyphicon-envelope:before {
-  content: "\2709";
-}
-
-.glyphicon-earphone:before {
-  content: "\e182";
-}
-
-.glyphicon-map-marker:before {
-  content: "\e062";
 }
 
 .input-group-addon,

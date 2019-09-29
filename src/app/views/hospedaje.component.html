@@ -1,5 +1,5 @@
 <div class="content-block">
-   <h4>{{titulo}}</h4>
+   <h5>{{titulo}}</h5>
 </div>
 
 <div class="content">
@@ -24,31 +24,65 @@
           <li>adipiicing elit dlanditiis quis ip.</li>
           <li>lorem sde glanditiis dars fao.</li>
         </ul>
-
-
-        <div class="form_main">
-            <h4 class="heading" style="text-align: right;"><strong>Contact </strong> Us <span></span></h4>
-            <div class="form">
+        <br>
+        <div class="row">        	
+        	<!-- <div class="form_main col-md-8"> -->
+        	<div class="col-md-8">
+	            <h4 class="heading" style="text-align: left;"><strong>Contact </strong> Us <span></span></h4>
+	           
                 <form action="" method="post" id="contactFrm" name="contactFrm">
-                    <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
-                    <input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="txt">
-                    <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
-                   <!--  <div class="input-append date form_datetime">
-    <input size="16" type="text" (click)="mostrarCalendario()">
-    <span class="add-on"><i class="icon-th"></i></span>
-</div> -->
- <input type="text" id="fecha_init" name="fecha_init" class="txt" placeholder="Please input your Date init" (click)="mostrarCalendario('fecha_init')"/> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
- 
-<input type="text" id="fecha_end" name="fecha_end" class="txt" placeholder="Please input your Date end" (click)="mostrarCalendario('fecha_end')"/> <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-
-<!--  <input type='text' id="txtFecha" class="form-control"  readonly/>
-                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span> -->
-                   
-
-                	 <textarea placeholder="Your Message" name="mess" type="text" rows="5" class="txt_3"></textarea>
-                     <input type="submit" value="Send your Info." name="submit" class="btn btn-primary btn-sm btn-block">
-                </form>
-            </div>
+                	<div class="form-group input-group-sm">
+                    	<input type="text" required="" placeholder="Please input your Name" value="" name="name" class="form-control">
+                    </div>
+                    <div class="form-group input-group-sm">
+                      	<input type="text" required="" placeholder="Please input your mobile No" value="" name="mob" class="form-control">
+                    </div>
+                    <div class="form-group input-group-sm">
+                     	 <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="form-control">
+                    </div>
+                   <div class="form-row">
+                   	<div class="col-md-6">
+                   	<label for="fecha_init">Desde:</label> 
+                   	 </div>
+                   	<div class="col-md-6">
+                   	<label for="fecha_end">Hasta:</label>
+                   	 </div>
+                   </div>
+                   <div class="form-row form-group">
+				    <div class="col-md-6 input-group input-group-sm">
+				   	  <!-- <label for="fecha_init">Desde</label> --> 
+				      <input type="text" id="fecha_init" name="fecha_init" class="form-control" placeholder="mm/dd/yyyy" (click)="mostrarCalendario('fecha_init')"/>
+				      <div class="input-group-append">
+				      <span class="input-group-text" id="basic-addon2"><span class="glyphicon glyphicon-calendar"></span> </span>
+				       </div>
+				    </div>
+				   <div class="col-md-6 input-group input-group-sm">
+				   	  <!-- <label for="fecha_end">Hasta</label> -->
+				      <input type="text" id="fecha_end" name="fecha_end" class="form-control" placeholder="mm/dd/yyyy" (click)="mostrarCalendario('fecha_end')"/>
+				      <div class="input-group-append">
+				      <span class="input-group-text" id="basic-addon2"><span class="glyphicon glyphicon-calendar"></span> </span>
+				       </div>
+				    </div>
+				  </div>
+					 
+				   <div class="form-group input-group-sm">
+                	 <textarea placeholder="Your Message" name="mess" type="text" rows="5" class="form-control"></textarea>                   
+                    </div>
+                    <!--  <input type="submit" value="Send your Info." name="submit" class="btn btn-primary btn-sm btn-block"> -->
+                    <button type="submit" class="btn btn-primary btn-sm">Send your Info.</button>
+                </form>                	
+            
+        	</div>
+        	<div class="form_main col-md-4" style="text-align:right;">
+        		<h4 class="">Disponibility:</h4>
+				<img width="200" src="../assets/images/calendar/octubre.png" alt="Disponibilidad Octubre">
+				<br><br>
+				<img width="200" src="../assets/images/calendar/noviembre.png" alt="Disponibilidad Noviembre">
+				<div class="alert alert-danger" role="alert" style="font-size:smaller; text-align:right; padding: 8px;">
+  *Días remacados en rojo No disponibles.
+</div>
+				<!-- <p style="font-size:x-small; text-align:right;"> *Días remacados en rojo No disponibles.</p> -->
+			</div>
         </div>
 	</div>
 </div>

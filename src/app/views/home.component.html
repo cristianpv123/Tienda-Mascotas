@@ -1,16 +1,36 @@
 <div class="content-block">
-   <h4>{{titulo}}</h4>
+   <h5>{{titulo}}</h5>
 </div>
 
 <div class="content">
-	 <div class="content-box">
-      <h2>Welcome to Tienda de Mascotas</h2>
-      <p>Here are some links to help you get started:</p>
-      <div class="clearfix"></div>
-      <br><br><br> 
+	 <div class="content-box">         
 
+      <div class="content-block" id="content-detail-cantina">
+         <h4 class="title">Welcome to Tienda de Mascotas</h4> 
+         <br>
+        <div class="row">          
+          <div class="col-md-7">
+           
+            <p style="text-align: justify; line-height:36px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            conseqiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <p style="text-align: justify; line-height:36px;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+          </div>
+          <div class="col-md-5">
+            <!-- <img class="img-center" src="https://www.nedlands.wa.gov.au/sites/default/files/dog1_0.jpeg"> -->
+            <img class="img-center" src="/assets/images/portada1.png">
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <hr>
+      <br><br>
+      <h4 class="title">Nuestros Servicios</h4>
+      <br><br>
       <div class="links-container">
-        
+         
           <a class="links" [routerLink]="['/hospedaje']">
             <img width="90" heigth="90" src="/assets/images/viaje.png">
             <span>Hospedaje</span>
@@ -27,6 +47,31 @@
           </a>
 
       </div>
+      <br><br><br><br>
+      <hr>
+      <br>
+      <h4 class="title">Contact Info</h4>
+      <br>  
+      <div class="content-block">
+        <div class="row">
+          <div class="col-md-7">
+           
+            <img class="img-center" src="/assets/images/white_dog.jpg">
+          </div>
+          <div class="col-md-5">  
+          <br>         
+            <ul style="padding-left:10px; list-style-type:none; line-height:36px;color:teal;">
+              <li><span class="glyphicon glyphicon-envelope"></span>   correo_de_tienda@gmail.com
+              </li>
+              <li><span class="glyphicon glyphicon-earphone"></span>   +58 00000 - 0000 / +58 0000 - 0000
+              </li>
+              <li><span class="glyphicon glyphicon-map-marker"></span>   Av. ...., calle ...
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     <br><br><br>
     </div>
 </div> 
