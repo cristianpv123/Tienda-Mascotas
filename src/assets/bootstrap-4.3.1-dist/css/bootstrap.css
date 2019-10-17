@@ -63,7 +63,7 @@ body {
   color: rgba(0,0,0,.87) /*#212529*/;
   text-align: left;
   background-color: /*#fff gris:#f2f2f2*/#7094e71c;
-  
+
 }
 
 [tabindex="-1"]:focus {
@@ -4560,7 +4560,7 @@ input[type="button"].btn-block {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: /*#fff*/#ffffff96;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -5215,8 +5215,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .alert-danger {
   color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
+  background-color: /*#f8d7da*/#f8d7da4d;
+  border-color: /*#f5c6cb*/#721c24;
 }
 
 .alert-danger hr {
